@@ -53,10 +53,10 @@ pub const DATA_GAS_PER_BLOB: u64 = 131_072u64; // 32*4096 = 131072 == 2^17 == 0x
 pub const BYTES_PER_BLOB: usize = 131_072;
 
 /// Maximum data gas for data blobs in a single block.
-pub const MAX_DATA_GAS_PER_BLOCK: u64 = 786_432u64; // 0xC0000 = 6 * 0x20000
+pub const MAX_DATA_GAS_PER_BLOCK: u64 = 1_048_576u64; // 0xC0000 = 6 * 0x20000
 
 /// Target data gas for data blobs in a single block.
-pub const TARGET_DATA_GAS_PER_BLOCK: u64 = 393_216u64; // 0x60000 = 3 * 0x20000
+pub const TARGET_DATA_GAS_PER_BLOCK: u64 = 524_288u64; // 0x60000 = 3 * 0x20000
 
 /// Maximum number of data blobs in a single block.
 pub const MAX_BLOBS_PER_BLOCK: usize = (MAX_DATA_GAS_PER_BLOCK / DATA_GAS_PER_BLOB) as usize; // 786432 / 131072  = 6
